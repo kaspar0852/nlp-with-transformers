@@ -1,4 +1,6 @@
-# nlp-with-transformers
+<img width="445" alt="Screenshot 2022-12-24 at 17 39 34" src="https://user-images.githubusercontent.com/70440698/209436561-888c67c4-44fd-40e7-8f2b-1dd5d9ceef6c.png">
+
+
 Transformers:
 1st step
 The input will go into the word embedding layer
@@ -34,3 +36,6 @@ So to prevent the access of the score of future word masking is done
 
 These are some of the layers within the transformers and is not complete as it is very hard to write in words so refer to :
 https://www.youtube.com/watch?v=4Bdc55j80l8
+
+
+
