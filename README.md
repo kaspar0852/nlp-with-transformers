@@ -16,16 +16,17 @@ learn to attaen to.
 3.Encoder Layer:
 The encoder layers job is to map all the input sequence into an abstract continuous representation that holds the learn information
 for that entire sequence.This layer contains 2 modules multi headed attention and a fully connected network.
-A.Multi headed attention: This applies a specific attention know as self attention.
-Self attention helps the module to associate each individual word to another word in the input 
-i.e if our input is ‘ Hi how are you’ then it is possible that our model will learn to associate you with are and how.
-To acheive self attention we feed the input to 3 distinct fully connected layer to create query, key and value vectors.
-(see explanation properly visually YT-the ai hacker)
 
-B.Residual connection,Layer Normalization and point wise Feet Forward:
-The output vector of the multi headed attention  is added to the original input this is called a residual connection.
-The output of the residual connection goes through a layer nomalization. 
-The normalized residual output goes through a point wise feet forward network for further processing.
+   A.Multi headed attention: This applies a specific attention know as self attention.
+   Self attention helps the module to associate each individual word to another word in the input 
+   i.e if our input is ‘ Hi how are you’ then it is possible that our model will learn to associate you with are and how.
+   To acheive self attention we feed the input to 3 distinct fully connected layer to create query, key and value vectors.
+   (see explanation properly visually YT-the ai hacker)
+
+   B.Residual connection,Layer Normalization and point wise Feet Forward:
+   The output vector of the multi headed attention  is added to the original input this is called a residual connection.
+   The output of the residual connection goes through a layer nomalization. 
+   The normalized residual output goes through a point wise feet forward network for further processing.
 
 4.Decoder: This will have 2 multi headed attention layer. 
 Here for an output of I am Fine the word ‘am’ should not have access to the score of the word ‘fine’ because it will come at the future. 
